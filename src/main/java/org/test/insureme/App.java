@@ -56,7 +56,7 @@ public class App
     	
         TakesScreenshot scrShot = ((TakesScreenshot)driver);        
         File srcFile = scrShot.getScreenshotAs(OutputType.FILE);    
-        File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");        
+        File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports3.jpg");        
         FileUtils.copyFile(srcFile, destFile);        
         Thread.sleep(1000);       
         driver.quit();    	
