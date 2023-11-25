@@ -53,13 +53,22 @@ public class App
     	System.out.println(response);
     	System.out.println("test scripts executed" );
     	
-    	TakesScreenshot srcShot=((TakesScreenshot)driver);
-    	File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
-    	File destFile = new File ("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
-    	//File destFile = new File ("D:\\videos-staragile\\mod7-capstone\\test-reports.jpg");
-    	FileUtils.copyFile(srcFile, destFile);    	
-    	Thread.sleep(1000); 
-    	driver.quit();
+    	
+        TakesScreenshot scrShot = ((TakesScreenshot)driver);        
+        File srcFile = scrShot.getScreenshotAs(OutputType.FILE);    
+        File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");        
+        FileUtils.copyFile(srcFile, destFile);        
+        Thread.sleep(1000);       
+        driver.quit();    	
+		/*
+		 * TakesScreenshot srcShot=((TakesScreenshot)driver); File srcFile =
+		 * srcShot.getScreenshotAs(OutputType.FILE); File destFile = new
+		 * File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
+		 * //File destFile = new File
+		 * ("D:\\videos-staragile\\mod7-capstone\\test-reports.jpg");
+		 * FileUtils.copyFile(srcFile, destFile); Thread.sleep(1000); driver.quit();
+		 */
+    	System.out.println("Successfully completed test case" );
 		/*
 		 * System.out.println( "Clicking send button" ); Thread.sleep(3000);
 		 * 
