@@ -60,7 +60,8 @@ public class App
     	
     	TakesScreenshot srcShot=((TakesScreenshot)driver);
     	File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
-    	File destFile = new File ("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports1.jpg");
+    	File destFile = new File ("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
+    	//   /var/lib/jenkins/workspace/insure-me-test-scripts
     	//File destFile = new File ("D:\\videos-staragile\\mod7-capstone\\test-reports.jpg");
     	FileUtils.copyFile(srcFile, destFile);
     	
