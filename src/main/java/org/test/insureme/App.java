@@ -30,7 +30,7 @@ public class App
     	//open url
     	WebDriver driver = new ChromeDriver(chromeOptions);
     	//driver.get("http://localhost:8081/contact.html");
-    	driver.get("http://65.1.94.158:8081/contact.html");
+    	driver.get("http://13.233.48.233:8081/contact.html");
     	//http://localhost:8081/contact.html
     	//wait to load page 
     	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -56,7 +56,7 @@ public class App
     	
         TakesScreenshot scrShot = ((TakesScreenshot)driver);        
         File srcFile = scrShot.getScreenshotAs(OutputType.FILE);    
-        File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports3.jpg");        
+        File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports4.jpg");        
         FileUtils.copyFile(srcFile, destFile);        
         Thread.sleep(1000);       
         driver.quit();    	
