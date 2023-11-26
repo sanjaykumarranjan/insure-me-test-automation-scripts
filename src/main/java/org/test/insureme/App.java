@@ -30,7 +30,7 @@ public class App
     	//open url
     	WebDriver driver = new ChromeDriver(chromeOptions);
     	//driver.get("http://localhost:8081/contact.html");
-    	driver.get("http://13.233.48.233:8081/contact.html");
+    	driver.get("http://13.126.29.19:8081/contact.html");
     	//http://localhost:8081/contact.html
     	//wait to load page 
     	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
